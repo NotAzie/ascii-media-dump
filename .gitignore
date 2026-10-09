@@ -1,0 +1,100 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+*.whl
+.pytest_cache/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.*
+.pyastgrep-cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OpenCV / processing temp
+*.tmp
+*.bak
+*.swp
+*~
+
+# Editorial and scratch outputs
+scratch/
+tmp/
+temp/
+out/
+output/
+outputs/
+exports/
+exported/
+downloads/
+
+# IDE and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.project
+.settings/
+*.launch
+*.code-workspace
+
+# OS spelunking artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local credentials and machine-specific config
+.env
+.env.*
+!.env.example
+secrets/
+secrets.*.txt
+credentials.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+known_hosts
+
+# Generated archives and images created by this repository's own tooling
+*.zip
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Browser artifacts
+*.crx
+*.xpi
+chrome/
+firefox/
+
+# Large binary research inputs that belong elsewhere
+*.psd
+*.ai
+*.xcf
+*.blend
+*.mb
+*.ma
