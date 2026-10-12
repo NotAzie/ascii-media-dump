@@ -1,0 +1,63 @@
+[project]
+name = "ascii-render"
+version = "0.1.0"
+description = "Recover, refine, and render images and video as polished ASCII art."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "ascii-render maintainer" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Text Processing :: Markup :: ASCII",
+]
+dependencies = [
+  "numpy>=1.24",
+  "pillow>=10.0.0",
+  "opencv-python-headless>=4.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "scipy>=1.10",
+  "scikit-image>=0.21",
+  "joblib>=1.3",
+  "pytest>=7.4",
+  "ruff>=0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/NotAzie/ascii-media-dump"
+Repository = "https://github.com/NotAzie/ascii-media-dump"
+
+[project.scripts]
+ascii-render = "ascii_render.cli:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B", "SIM"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+[tool.setuptools.packages.find]
+include = ["ascii_render*"]
+exclude = ["scratch*", "importants*", "try_2026*"]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -50,6 +50,11 @@ exports/
 exported/
 downloads/
 
+# Legacy experimental scripts that are not part of the maintained package
+importants/
+try_2026/
+ASCII-generator-master/
+
 # IDE and editors
 .idea/
 .vscode/
